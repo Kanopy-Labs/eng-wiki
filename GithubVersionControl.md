@@ -1,12 +1,15 @@
 # Github & Version Control
 
+[Git Cheat Sheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
+[Learn Git Interactively](https://learngitbranching.js.org/?locale=en_US)
+
 - [Github & Version Control](#github--version-control)
   - [Overview](#overview)
   - [TLDR](#tldr)
   - [Rebasing vs Merging](#rebasing-vs-merging)
     - [When should I be merging commits?](#when-should-i-be-merging-commits)
     - [When should I be rebase commits?](#when-should-i-be-rebase-commits)
-    - [When should I NOT  be rebase commits?](#when-should-i-not--be-rebase-commits)
+    - [When should I NOT be rebase commits?](#when-should-i-not--be-rebase-commits)
   - [Pull Requests](#pull-requests)
     - [Why should I use pull requests?](#why-should-i-use-pull-requests)
     - [What are github actions?](#what-are-github-actions)
@@ -29,7 +32,7 @@
   - [Q&A](#qa)
   - [Additional Resources](#additional-resources)
 
-----
+---
 
 ## Overview
 
@@ -41,7 +44,7 @@
 
 ### When should I be rebase commits?
 
-### When should I NOT  be rebase commits?
+### When should I NOT be rebase commits?
 
 ## Pull Requests
 
