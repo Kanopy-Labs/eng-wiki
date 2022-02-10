@@ -7,3 +7,4 @@ Currently this includes resources/info on:
 - [TypeScript](/TypescriptTypes.md)
 - [Git and Version Control](/GithubVersionControl.md)
 - [Web Architecture Design](/WebArchitectureDesign.md)
+- [React Component Design](/ReactComponentDesign.md)

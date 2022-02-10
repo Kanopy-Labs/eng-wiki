@@ -1,7 +1,8 @@
 # Github & Version Control
 
-[Git Cheat Sheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
+[Git Simple Guide / Cheat Sheet](https://rogerdudler.github.io/git-guide/)
 [Learn Git Interactively](https://learngitbranching.js.org/?locale=en_US)
+[PR Etiquette](https://gist.github.com/mikepea/863f63d6e37281e329f8)
 
 - [Github & Version Control](#github--version-control)
   - [Overview](#overview)
