@@ -35,7 +35,7 @@ You should be merging commits when you push a PR into `main`. You can also use m
 
 ### When should I be rebase commits?
 
-Rebasing can cause us to destory commits. We should attempt to not rebase unless necessary. Merging is much safer in 95% of scenarios. Here is some more information of [merging vs. rebasing](https://hackernoon.com/git-merge-vs-rebase-whats-the-diff-76413c117333).
+Rebasing can cause us to destroy commits. We should attempt to not rebase unless necessary. Merging is much safer in 95% of scenarios. Here is some more information of [merging vs. rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
 
 ## Pull Requests
 
@@ -50,32 +50,41 @@ GitHub actions let us add commands that are run everytime code is pushed up to G
 ### What should I do before merging a pull request?
 
 Some good practices before merging are:
-* Perform a self-review
-* Test it
-* Pull main so it is up to date
-* Write a description of what/why/how you did
-* Add images if any significant UI changes
-* Get it approved by someone else
-* Ensure CI/CD passes
+
+- Perform a self-review
+- Test it
+- Pull `main` so it is up to date
+- Write a description of what/why/how you did
+- Add images of any significant UI changes
+- Receive a PR approval from peers
+- Ensure CI/CD passes
 
 ### Who should I request to review my pull request?
 
-There will be automatic suggested reviewers or people that have context on the specific feature.
+There will be automatic suggested reviewers recommended by Github or people that have context on the specific feature.
+
+<img src="./images/github/reviewers.png" height=400/>
 
 ### How should I be reviewing code?
 
-When reviewing:
-* Read description
-* Think how you would do it yourself
-* Nit picking (are the files in the right place)
-* Check if there are tests that cover the added functionality
+When reviewing a PR here are some general rule of thumb:
+
+- Read the PR description to gain some initial context to the problem space and what te proposed solutions is. If needed, request clarification or more details from the author.
+
+- Before reading the code, take a moment to think about how you would approach the problem. Comparing your perspective on the problem with the proposed solution makes it easier to provide constructive feedback.
+
+- Before you start reading every line of code changes, skim through its to look for new components and architectures. Make sure that new components are places in the correct directories and patterns are adhered to.
+
+- Enforce good engineering practices by pointing out problems large and small. Leave simple comments on nits(typos, etc.) and provide detailed comments as you see fit.
+
+- Check if there are tests that cover the added functionality
 
 ## Branching
 
 ### How do I create a new branch?
 
 ```sh
-$ git checkout -b [BRANCH NAME]
+git checkout -b [BRANCH NAME]
 ```
 
 ### What should my base branch be?
@@ -97,8 +106,8 @@ A commit is a change or revision in git's terminology for a file or set of files
 Add your changes and then commit with a message.
 
 ```sh
-$ git add .
-$ git commit -m "adds [SPECIFIC FEATURE]"
+git add .
+git commit -m "adds [SPECIFIC FEATURE]"
 ```
 
 ### How should I name my commit messages?
@@ -114,7 +123,7 @@ Reverting is basically the equivalent of the undo command in git.
 Revert is documented more in detail [here](https://git-scm.com/docs/git-revert). If you want to just undo a specific change, you can run:
 
 ```sh
-$ git revert HEAD~1
+git revert HEAD~1
 ```
 
 ## Merge Conflicts
@@ -129,6 +138,6 @@ Merge conflicts include incoming and current changes. Incoming are ones from the
 
 ## Additional Resources
 
-* [Git Simple Guide / Cheat Sheet](https://rogerdudler.github.io/git-guide/)
-* [Learn Git Interactively](https://learngitbranching.js.org/?locale=en_US)
-* [PR Etiquette](https://gist.github.com/mikepea/863f63d6e37281e329f8)
+- [Git Simple Guide / Cheat Sheet](https://rogerdudler.github.io/git-guide/)
+- [Learn Git Interactively](https://learngitbranching.js.org/?locale=en_US)
+- [PR Etiquette](https://gist.github.com/mikepea/863f63d6e37281e329f8)
